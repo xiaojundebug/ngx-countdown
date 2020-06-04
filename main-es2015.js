@@ -23,10 +23,10 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./dist/ngx-countdown/fesm2015/ngx-countdown.js":
-/*!******************************************************!*\
-  !*** ./dist/ngx-countdown/fesm2015/ngx-countdown.js ***!
-  \******************************************************/
+/***/ "./dist/ngx-countdown/fesm2015/ciri-ngx-countdown.js":
+/*!***********************************************************!*\
+  !*** ./dist/ngx-countdown/fesm2015/ciri-ngx-countdown.js ***!
+  \***********************************************************/
 /*! exports provided: CountdownComponent, CountdownModule, CountdownState */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -395,12 +395,12 @@ CountdownModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ngx-countdown.ts
+ * Generated from: ciri-ngx-countdown.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 
-//# sourceMappingURL=ngx-countdown.js.map
+//# sourceMappingURL=ciri-ngx-countdown.js.map
 
 
 /***/ }),
@@ -729,7 +729,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _ciri_ngx_countdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ciri/ngx-countdown */ "./dist/ngx-countdown/fesm2015/ngx-countdown.js");
+/* harmony import */ var _ciri_ngx_countdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ciri/ngx-countdown */ "./dist/ngx-countdown/fesm2015/ciri-ngx-countdown.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 
 

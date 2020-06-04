@@ -36,15 +36,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./dist/ngx-countdown/fesm2015/ngx-countdown.js":
-  /*!******************************************************!*\
-    !*** ./dist/ngx-countdown/fesm2015/ngx-countdown.js ***!
-    \******************************************************/
+  "./dist/ngx-countdown/fesm2015/ciri-ngx-countdown.js":
+  /*!***********************************************************!*\
+    !*** ./dist/ngx-countdown/fesm2015/ciri-ngx-countdown.js ***!
+    \***********************************************************/
 
   /*! exports provided: CountdownComponent, CountdownModule, CountdownState */
 
   /***/
-  function distNgxCountdownFesm2015NgxCountdownJs(module, __webpack_exports__, __webpack_require__) {
+  function distNgxCountdownFesm2015CiriNgxCountdownJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -557,10 +557,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: ngx-countdown.ts
+     * Generated from: ciri-ngx-countdown.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    //# sourceMappingURL=ngx-countdown.js.map
+    //# sourceMappingURL=ciri-ngx-countdown.js.map
 
     /***/
   },
@@ -1301,7 +1301,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var _ciri_ngx_countdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @ciri/ngx-countdown */
-    "./dist/ngx-countdown/fesm2015/ngx-countdown.js");
+    "./dist/ngx-countdown/fesm2015/ciri-ngx-countdown.js");
     /* harmony import */
 
 
