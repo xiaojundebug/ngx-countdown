@@ -1,4 +1,4 @@
-# NgxPopup
+# NgxCountdown
 
 An angular countdown component.
 
