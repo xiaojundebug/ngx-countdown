@@ -1,5 +1,5 @@
 {
-  "name": "ngx-countdown",
+  "name": "@ciri/ngx-countdown",
   "description": "An angular countdown component.",
   "version": "0.0.1",
   "license": "MIT",
