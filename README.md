@@ -53,8 +53,7 @@ Add to view:
   format="HH:mm:ss:SSS"
   [millisecond]="true"
   [autoStart]="false"
-></ngx-countdown
->&nbsp;state: {{ counter.state }}
+></ngx-countdown>&nbsp;state: {{ counter.state }}
 <br />
 <button (click)="counter.start()">start</button>&nbsp;
 <button (click)="counter.pause()">pause</button>&nbsp;
