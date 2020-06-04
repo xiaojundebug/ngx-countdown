@@ -1,27 +1,117 @@
-# NgxCountdownApp
+# NgxPopup
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.26.
+An angular countdown component.
 
-## Development server
+<p align="center">
+  <img alt="travis" src="https://travis-ci.org/xiaojun1994/ngx-countdown.svg?branch=master">&nbsp;
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+👉 [Demo](https://stackblitz.com/edit/ngx-countdown-demo)
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm i @ciri/ngx-countdown
+```
 
-## Build
+## Quick Start
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Add it to your module:
 
-## Running unit tests
+```typescript
+import { CountdownModule } from '@ciri/ngx-countdown'
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+  // ...
+  imports: [
+    // ...
+    CountdownModule
+  ],
+})
+```
 
-## Running end-to-end tests
+Add to view:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```html
+<ngx-countdown [time]="86400000"></ngx-countdown>
+<br />
+<ngx-countdown [time]="60000" format="ss"></ngx-countdown>s
+```
 
-## Further help
+## Millisecond Render
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```html
+<ngx-countdown [time]="86400000" [millisecond]="true" format="HH:mm:ss SSS"></ngx-countdown>
+```
+
+## Manual Control
+
+```html
+<ngx-countdown
+  #counter
+  [time]="10000"
+  format="HH:mm:ss:SSS"
+  [millisecond]="true"
+  [autoStart]="false"
+></ngx-countdown
+>&nbsp;state: {{ counter.state }}
+<br />
+<button (click)="counter.start()">start</button>&nbsp;
+<button (click)="counter.pause()">pause</button>&nbsp;
+<button (click)="counter.reset()">reset</button>
+```
+
+## Custom Render
+
+```html
+<ngx-countdown [time]="86400000 * 2" [render]="render" format="HH:mm:ss:SSS" [millisecond]="true">
+  <ng-template #render let-data>
+    <span style="font-size: 26px; color: royalblue">{{ data.formattedTime }}</span>
+    <div style="display: flex">
+      <span style="color: #D95140">{{ data.fragments[0] }}</span>:
+      <span style="color: #58A55C">{{ data.fragments[1] }}</span>:
+      <span style="color: #F2BE42">{{ data.fragments[2] }}</span>:
+      <span style="color: #5086EC">{{ data.fragments[3] }}</span>
+    </div>
+    <span>remain: {{ data.remain }}ms</span>
+  </ng-template>
+</ngx-countdown>
+```
+
+## Inputs
+
+| Name        | Type             | Default  | Description                                               |
+| ----------- | ---------------- | -------- | --------------------------------------------------------- |
+| time        | number           | 60000    | Total time(milliseconds)                                  |
+| format      | string           | HH:mm:ss | Time format, see: [Available Formats](#available-formats) |
+| autoStart   | boolean          | true     | Whether to auto start count down                          |
+| millisecond | boolean          | false    | Whether to enable millisecond render                      |
+| render      | TemplateRef<any> | -        | Custom render                                             |
+
+## Outputs
+
+| Event  | Description                        | Return value |
+| ------ | ---------------------------------- | ------------ |
+| finish | Triggered when count down finished | -            |
+| tick   | Triggered when count down changed  | Remain time  |
+
+## Available Formats
+
+| Event | Description           |
+| ----- | --------------------- |
+| DD    | Day                   |
+| HH    | Hour                  |
+| mm    | Minute                |
+| ss    | Second                |
+| S     | Millisecond, 1-digit  |
+| SS    | Millisecond, 2-digits |
+| SSS   | Millisecond, 3-digits |
+
+## Public Api
+
+| Name  | Type     | Description                                          |
+| ----- | -------- | ---------------------------------------------------- |
+| state | number   | Current state: 0 = paused, 1 = playing, 2 = finished |
+| start | function | Start count down                                     |
+| pause | function | Pause count down                                     |
+| reset | function | Reset count down                                     |

@@ -1,0 +1,2 @@
+<ng-container *ngIf="!render">{{ data.formattedTime }}</ng-container>
+<ng-container *ngTemplateOutlet="render; context: { $implicit: data }"></ng-container>

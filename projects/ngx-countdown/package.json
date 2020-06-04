@@ -1,0 +1,17 @@
+{
+  "name": "ngx-countdown",
+  "description": "An angular countdown component.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "xiaojun1994 <362896731@qq.com>",
+  "repository": "git@github.com:xiaojun1994/ngx-countdown.git",
+  "keywords": [
+    "angular",
+    "ng",
+    "countdown"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  }
+}

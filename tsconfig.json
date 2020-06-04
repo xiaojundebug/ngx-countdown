@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@ciri/ngx-countdown": [
+        "dist/ngx-countdown"
+      ],
+      "@ciri/ngx-countdown/*": [
+        "dist/ngx-countdown/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
