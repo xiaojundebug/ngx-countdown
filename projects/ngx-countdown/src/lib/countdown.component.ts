@@ -11,7 +11,7 @@ import {
 } from '@angular/core'
 import { interval, Subscription } from 'rxjs'
 import { animationFrame } from 'rxjs/internal/scheduler/animationFrame'
-import { isSameSecond, parseFormat, parseTimeData, TimeData } from './utils'
+import { isSameSecond, parseFormat, parseTimeData } from './utils'
 
 interface CountdownData {
   remain: number

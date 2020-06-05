@@ -1,9 +1,11 @@
 # NgxCountdown
 
-An angular countdown component.
+An angular countdown component, inspired by [vant](https://github.com/youzan/vant).
+
+_development environment: angular 8.2.14_
 
 <p align="center">
-  <img alt="travis" src="https://travis-ci.org/xiaojun1994/ngx-countdown.svg?branch=master">&nbsp;
+  <img alt="travis" src="https://travis-ci.org/xiaojun1994/ngx-countdown.svg?branch=master">
 </p>
 
 👉 [Demo](https://stackblitz.com/edit/ngx-countdown-demo)
@@ -53,7 +55,8 @@ Add to view:
   format="HH:mm:ss:SSS"
   [millisecond]="true"
   [autoStart]="false"
-></ngx-countdown>&nbsp;state: {{ counter.state }}
+></ngx-countdown
+>&nbsp;state: {{ counter.state }}
 <br />
 <button (click)="counter.start()">start</button>&nbsp;
 <button (click)="counter.pause()">pause</button>&nbsp;
